@@ -16,10 +16,10 @@
     border: 1px solid #eaeaea;
     background: #fff;
 
-    & > img {
+    & :first-child {
       padding-left: 16px;
     }
-    & > a {
+    & :last-child {
       padding-right: 16px;
       display: inherit;
       align-items: inherit;
@@ -39,7 +39,7 @@
     line-height: 150%;
     letter-spacing: -0.2px;
 
-    &--show {
+    &--expanded {
       .b-brand-slider {
         &__e-more-icon:nth-child(1) {
           display: flex;
@@ -49,7 +49,7 @@
         }
       }
     }
-    &--hide {
+    &--collapsed {
       .b-brand-slider {
         &__e-more-icon:nth-child(1) {
           display: none;
@@ -62,17 +62,18 @@
   }
 
   &__e-pagination {
+    display: none;
     position: static;
   }
 
-  &--collapse {
+  &--collapsed {
     .b-brand-slider {
       &__e-slide--hidden {
         display: none;
       }
     }
   }
-  &--expand {
+  &--expanded {
     .b-brand-slider {
       &__e-wrapper {
         margin-bottom: 46px;
@@ -108,7 +109,12 @@
       display: none;
     }
 
-    &--expand {
+    &__e-pagination {
+      display: block;
+      position: static;
+    }
+
+    &--expanded {
       .b-brand-slider {
         &__e-wrapper {
           margin-bottom: 16px;
@@ -132,7 +138,7 @@
       display: none;
     }
 
-    &--expand {
+    &--expanded {
       .b-brand-slider {
         &__e-wrapper {
           margin-bottom: 46px;

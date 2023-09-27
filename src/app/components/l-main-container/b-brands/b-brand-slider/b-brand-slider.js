@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+// eslint-disable-next-line import/no-unresolved
 import { Keyboard, Pagination } from "swiper/modules";
 
 import {

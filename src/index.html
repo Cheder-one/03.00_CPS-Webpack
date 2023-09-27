@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
     <!-- MAIN CONTENT -->
     <div class="l-main-container">
       <header>
-        <!-- Top Menu -->
+        <!-- TOP MENU -->
         <div class="b-top-menu b-top-menu--box-model">
           <button class="b-top-menu__e-nav-icon">
             <img src="./app/assets/img/ic/burger.svg" alt="sidebar" />
@@ -102,7 +102,7 @@
               <button class="b-about-content__e-read-more-btn">
                 <img src="./app/assets/img/expand.svg" alt="" />
                 <img
-                  class="b-about-content__e-collapse-icon"
+                  class="b-about-content__e-collapsed-icon"
                   src="./app/assets/img/collapse.svg"
                   alt=""
                 />
@@ -118,6 +118,8 @@
           </div>
         </div>
 
+        <!-- // NOTE BRANDS -->
+
         <!-- BRANDS -->
         <div class="b-brands b-brands--box-model">
           <div class="b-brands__title">
@@ -127,7 +129,7 @@
           <!-- BRAND SLIDER -->
           <div
             data-mobile="false"
-            class="b-brand-slider b-brand-slider--box-model b-brand-slider--collapse swiper"
+            class="b-brand-slider b-brand-slider--box-model b-brand-slider--collapsed swiper"
           >
             <ul class="b-brand-slider__e-wrapper swiper-wrapper">
               <!-- Slides -->
@@ -210,8 +212,80 @@
                 </a>
               </li>
             </template>
+
             <button
-              class="b-brand-slider__e-more-btn b-brand-slider__e-more-btn--show"
+              class="b-brand-slider__e-more-btn b-brand-slider__e-more-btn--collapsed"
+            >
+              <img
+                class="b-brand-slider__e-more-icon"
+                src="./app/assets/img/expand.svg"
+                alt=""
+              />
+              <img
+                class="b-brand-slider__e-more-icon"
+                src="./app/assets/img/collapse.svg"
+                alt=""
+              />
+              <span class="b-brand-slider__e-show-more">Показать все</span>
+            </button>
+
+            <div class="b-brand-slider__e-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="b-brands__e-fade"></div>
+        </div>
+
+        <!-- // NOTE EQUIPMENT -->
+
+        <!-- EQUIPMENT -->
+        <div class="b-equipment b-brands b-brands--box-model">
+          <div class="b-brands__title">
+            <span>Ремонт различных видов техники</span>
+          </div>
+
+          <div
+            data-mobile="false"
+            class="b-equipment-slider b-equipment-slider--collapsed b-brand-slider b-brand-slider--box-model swiper"
+          >
+            <ul
+              class="b-equipment-slider__e-wrapper b-brand-slider__e-wrapper swiper-wrapper"
+            >
+              <li
+                class="b-equipment-slider__e-slide b-brand-slider__e-slide swiper-slide"
+              >
+                <div>Ремонт ноутбуков</div>
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li
+                class="b-equipment-slider__e-slide b-brand-slider__e-slide swiper-slide"
+              >
+                <div>Ремонт планшетов</div>
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li
+                class="b-equipment-slider__e-slide b-brand-slider__e-slide swiper-slide"
+              >
+                <div>Ремонт ПК</div>
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li
+                class="b-equipment-slider__e-slide b-brand-slider__e-slide swiper-slide"
+              >
+                <div>Ремонт мониторов</div>
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+            </ul>
+
+            <button
+              class="b-equipment-slider__e-more-btn b-brand-slider__e-more-btn b-brand-slider__e-more-btn--collapsed"
             >
               <img
                 class="b-brand-slider__e-more-icon"

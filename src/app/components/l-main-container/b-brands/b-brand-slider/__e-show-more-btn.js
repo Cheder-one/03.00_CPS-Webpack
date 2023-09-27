@@ -1,26 +1,23 @@
-const showMoreBtn = document.querySelector(
-  ".b-brand-slider__e-more-btn"
-);
+const brandsCollapse = document.querySelector(".b-brand-slider--collapsed");
+const showMoreBtn = brandsCollapse.querySelector(".b-brand-slider__e-more-btn");
 const showMoreText = showMoreBtn.querySelector("span");
-const showMoreIcon = showMoreBtn.querySelector(
-  ".b-brand-slider__e-icon"
-);
-const brandsCollapse = document.querySelector(
-  ".b-brand-slider--collapse"
-);
+
+const checkIsExpanded = () => {
+  return showMoreBtn.classList.contains(
+    "b-brand-slider__e-more-btn--collapsed"
+  );
+};
 
 showMoreBtn.addEventListener("click", () => {
-  showMoreBtn.classList.toggle("b-brand-slider__e-more-btn--show");
-  showMoreBtn.classList.toggle("b-brand-slider__e-more-btn--hide");
+  const isExpanded = checkIsExpanded();
 
-  brandsCollapse.classList.toggle("b-brand-slider--expand");
-  brandsCollapse.classList.toggle("b-brand-slider--collapse");
+  showMoreBtn.classList.toggle("b-brand-slider__e-more-btn--collapsed");
+  showMoreBtn.classList.toggle("b-brand-slider__e-more-btn--expanded");
 
-  const isCollapsed = showMoreBtn.classList.contains(
-    "b-brand-slider__e-more-btn--hide"
-  );
+  brandsCollapse.classList.toggle("b-brand-slider--collapsed");
+  brandsCollapse.classList.toggle("b-brand-slider--expanded");
 
-  if (isCollapsed) {
+  if (isExpanded) {
     showMoreText.textContent = "Скрыть";
   } else {
     showMoreText.textContent = "Показать все";
