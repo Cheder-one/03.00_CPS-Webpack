@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+  font-family: TT Lakes;
+}
+
+button,
+a {
+  all: initial;
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
