@@ -7,19 +7,19 @@
 @import "./app/style/fonts";
 @import "./app/style/var";
 
-@import "./app/components/l-main-container/l-main-container.scss";
-@import "./app/components/l-aside-container/l-aside-container.scss";
+@import "./app/components/main-container/main-container.scss";
+@import "./app/components/aside-container/aside-container.scss";
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1439.9px) {
   body {
     display: flex;
 
-    .l-main-content {
+    .main-content {
       flex-direction: column;
     }
 
-    .l-aside-container {
+    .aside-container {
       display: flex;
       flex-direction: column;
       background: #fff;
@@ -29,6 +29,6 @@
 }
 
 /* !----- DEVELOP_MODE -----! */
-.l-aside-container {
+.aside-container {
   display: none !important;
 }

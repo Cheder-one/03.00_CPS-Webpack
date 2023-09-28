@@ -1,0 +1,25 @@
+.equipment-slider {
+  &__slide {
+    height: 160px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .equipment-slider {
+    &__fade {
+      height: 166px;
+      bottom: 37px;
+    }
+  }
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
+  //
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1120px) {
+  //
+}

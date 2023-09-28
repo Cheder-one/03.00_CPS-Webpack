@@ -1,0 +1,152 @@
+.brand-slider {
+  &__wrapper {
+    margin: 0 0 16px 16px;
+  }
+
+  &__slide {
+    width: 224px;
+    height: 72px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+
+    & :first-child {
+      padding-left: 16px;
+    }
+    & :last-child {
+      padding-right: 16px;
+      display: inherit;
+      align-items: inherit;
+    }
+  }
+
+  &__more-btn {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #1b1c21;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+
+  &__pagination {
+    display: none;
+    position: static;
+  }
+
+  &--collapsed {
+    .swiper-slide--hidden {
+      display: none;
+    }
+  }
+  &--expanded {
+    .swiper-slide--hidden {
+      display: flex;
+    }
+
+    .brand-slider {
+      &__wrapper {
+        margin-bottom: 46px;
+      }
+    }
+  }
+}
+
+/* ----- Swiper-classes ----- */
+.brand-slider {
+  .swiper {
+    &-pagination-bullet {
+      margin: 6px !important;
+      width: 12px;
+      height: 12px;
+      background-color: #dddddd;
+      opacity: 1;
+
+      &-active {
+        background-color: #b5b6bc;
+      }
+    }
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .brand-slider {
+    &__more-btn {
+      display: none;
+    }
+
+    &__pagination {
+      display: block;
+      position: static;
+    }
+
+    &--expanded {
+      .brand-slider {
+        &__wrapper {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
+  .brand-slider {
+    &__wrapper {
+      margin: 0 24px 24px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+    }
+
+    &__slide:nth-child(4n) {
+      display: none;
+    }
+
+    &--expanded {
+      .brand-slider {
+        &__wrapper {
+          margin-bottom: 46px;
+        }
+        &__slide:nth-child(4n) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1120px) {
+  .brand-slider {
+    position: relative;
+
+    &__wrapper {
+      margin: 0 32px 24px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 32px;
+    }
+
+    &__slide {
+      width: 240px;
+    }
+
+    &__more-btn {
+      margin-left: 32px;
+    }
+  }
+}

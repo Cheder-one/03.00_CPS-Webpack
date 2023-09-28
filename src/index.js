@@ -1,7 +1,7 @@
 import "./index.html";
 import "./index.scss";
 
-import "./app/components/l-main-container/l-main-container.js";
+import "./app/components/main-container/main-container.js";
 
 // TODO Реализация блока "Ремонт различных видов техники"
 

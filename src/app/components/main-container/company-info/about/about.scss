@@ -1,0 +1,64 @@
+.about {
+  display: flex;
+
+  &__logo-photo {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 6px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .about {
+    flex-direction: column;
+
+    &__text-break {
+      display: none;
+    }
+    &__logo-photo {
+      flex-shrink: 0;
+      border-radius: 0;
+    }
+
+    &--box-model {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .about {
+    gap: 48px;
+
+    &__logo-photo {
+      width: 360px;
+      height: 260px;
+      flex-shrink: 0;
+    }
+
+    &--box-model {
+      margin: 0 24px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .about {
+    gap: 36px;
+
+    &__logo-photo {
+      width: 531.346px;
+      height: 307px;
+      flex-shrink: 0;
+    }
+
+    &--box-model {
+      margin: 0 28px 50px 32px;
+    }
+  }
+}
