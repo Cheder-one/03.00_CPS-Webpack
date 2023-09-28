@@ -1,4 +1,4 @@
-.equipment-slider {
+.equipments-slider {
   &__slide {
     height: 160px;
   }
@@ -6,7 +6,7 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  .equipment-slider {
+  .equipments-slider {
     &__fade {
       height: 166px;
       bottom: 37px;

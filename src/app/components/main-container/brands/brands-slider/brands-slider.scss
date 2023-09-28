@@ -1,4 +1,4 @@
-.brand-slider {
+.brands-slider {
   &__wrapper {
     margin: 0 0 16px 16px;
   }
@@ -16,13 +16,15 @@
     border: 1px solid #eaeaea;
     background: #fff;
 
-    & :first-child {
-      padding-left: 16px;
-    }
-    & :last-child {
-      padding-right: 16px;
-      display: inherit;
-      align-items: inherit;
+    .brands-slider {
+      &__slide-item:first-child {
+        padding-left: 16px;
+      }
+      &__slide-item:last-child {
+        padding-right: 16px;
+        display: inherit;
+        align-items: inherit;
+      }
     }
   }
 
@@ -55,7 +57,7 @@
       display: flex;
     }
 
-    .brand-slider {
+    .brands-slider {
       &__wrapper {
         margin-bottom: 46px;
       }
@@ -64,7 +66,7 @@
 }
 
 /* ----- Swiper-classes ----- */
-.brand-slider {
+.brands-slider {
   .swiper {
     &-pagination-bullet {
       margin: 6px !important;
@@ -82,7 +84,7 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  .brand-slider {
+  .brands-slider {
     &__more-btn {
       display: none;
     }
@@ -93,7 +95,7 @@
     }
 
     &--expanded {
-      .brand-slider {
+      .brands-slider {
         &__wrapper {
           margin-bottom: 16px;
         }
@@ -104,7 +106,7 @@
 
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
-  .brand-slider {
+  .brands-slider {
     &__wrapper {
       margin: 0 24px 24px 24px;
       display: flex;
@@ -117,7 +119,7 @@
     }
 
     &--expanded {
-      .brand-slider {
+      .brands-slider {
         &__wrapper {
           margin-bottom: 46px;
         }
@@ -131,7 +133,7 @@
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1120px) {
-  .brand-slider {
+  .brands-slider {
     position: relative;
 
     &__wrapper {

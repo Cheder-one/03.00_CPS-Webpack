@@ -1,16 +1,12 @@
 import Swiper from "swiper";
 // eslint-disable-next-line
 import { Keyboard, Pagination } from "swiper/modules";
+import { addHiddenSlides, removeHiddenSlides } from "../../../../utils/slider";
 
-import {
-  addHiddenSlides,
-  removeHiddenSlides
-} from "./utils/toggleHiddenBrands";
+let mobileSlider = [];
 
 const sliders = document.querySelectorAll(".swiper");
 const mediaQuerySmall = window.matchMedia("(max-width: 767.9px)");
-
-let mobileSlider = [];
 
 const createBrandSlider = (slider) => {
   return new Swiper(slider, {
@@ -41,7 +37,6 @@ function handleMediaChange(event) {
   sliders.forEach((slider) => {
     if (isSmallScreen) {
       removeHiddenSlides();
-
       mobileSlider.push(createBrandSlider(slider));
 
       slider.dataset.mobile = "true";
@@ -50,6 +45,7 @@ function handleMediaChange(event) {
         mobileSlider.forEach((el) => el.destroy());
       }
       addHiddenSlides();
+
       slider.dataset.mobile = "false";
     }
   });
