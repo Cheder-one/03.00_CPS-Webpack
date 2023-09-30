@@ -6,21 +6,24 @@ const findHiddenSlides = () => {
 };
 
 export const addHiddenSlides = () => {
-  const hiddenBrands = findHiddenSlides();
+  const hiddenSlides = findHiddenSlides();
 
-  if (hiddenBrands.length === 0) {
+  if (hiddenSlides.length === 0) {
     const clonedTemplate = [];
-    slidesTemplate.forEach((template) => {
-      clonedTemplate.push(template.content.cloneNode(true));
-    });
-    sliderWrapper.forEach((wrap, i) => wrap.appendChild(clonedTemplate[i]));
+
+    slidesTemplate.forEach((template) =>
+      clonedTemplate.push(template.content.cloneNode(true))
+    );
+    sliderWrapper.forEach((wrap, i) =>
+      clonedTemplate[i] ? wrap.appendChild(clonedTemplate[i]) : ""
+    );
   }
 };
 
 export const removeHiddenSlides = () => {
-  const hiddenBrands = findHiddenSlides();
+  const hiddenSlides = findHiddenSlides();
 
-  if (hiddenBrands.length > 0) {
-    hiddenBrands.forEach((el) => el.remove());
+  if (hiddenSlides.length > 0) {
+    hiddenSlides.forEach((el) => el.remove());
   }
 };

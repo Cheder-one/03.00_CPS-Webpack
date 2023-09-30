@@ -18,7 +18,7 @@
     text-transform: uppercase;
     background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
 
-    & > span {
+    & > h2 {
       margin-left: 16px;
     }
   }
@@ -65,7 +65,7 @@
     &__title {
       margin-bottom: 24px;
 
-      & > span {
+      & > h2 {
         margin-left: 24px;
       }
     }
@@ -82,7 +82,7 @@
     &__title {
       margin-bottom: 40px;
 
-      & > span {
+      & > h2 {
         margin-left: 32px;
       }
     }
