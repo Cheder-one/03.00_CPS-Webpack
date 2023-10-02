@@ -4,7 +4,11 @@
     &__fade {
       width: 24px;
       height: 200px;
-      bottom: 70px;
+      bottom: 60px;
+    }
+
+    &--box-model {
+      padding-bottom: 16px;
     }
   }
 }
@@ -14,6 +18,10 @@
   .prices {
     .prices &__title {
       margin-bottom: 32px;
+    }
+
+    &--box-model {
+      padding-bottom: 0 !important;
     }
   }
 }

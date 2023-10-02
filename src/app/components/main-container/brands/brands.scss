@@ -24,13 +24,7 @@
   }
 
   &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    width: 100%;
-    height: 2px;
-    flex-shrink: 0;
-    background-color: #d9fff5;
+    @include aqua-divider;
   }
 
   &--box-model {

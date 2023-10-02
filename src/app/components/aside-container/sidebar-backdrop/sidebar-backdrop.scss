@@ -1,0 +1,19 @@
+.sidebar-backdrop {
+  opacity: 0.9605;
+  background: #fff;
+
+  &--box-model {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 5;
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  .sidebar-backdrop {
+    display: none;
+  }
+}

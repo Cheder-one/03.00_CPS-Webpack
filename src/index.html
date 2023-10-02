@@ -11,27 +11,27 @@
       <header>
         <!-- TOP MENU -->
         <div class="top-menu top-menu--box-model">
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/burger.svg" alt="sidebar" />
           </button>
           <div class="top-menu__divider"></div>
           <a href="#" class="top-menu__logo">
             <img src="./app/assets/img/logo/cps-logo.svg" alt="logo" />
           </a>
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/call.svg" alt="call" />
           </button>
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/chat.svg" alt="chat" />
           </button>
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/profile.svg" alt="profile" />
           </button>
           <div class="top-menu__divider"></div>
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/repair.svg" alt="repair" />
           </button>
-          <button class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon">
             <img src="./app/assets/img/ic/checkstatus.svg" alt="check status" />
           </button>
         </div>
@@ -45,11 +45,11 @@
             <img src="./app/assets/img/highlight.svg" alt="" />
             <h1 class="header__title">Услуги и сервисы</h1>
 
-            <button class="header__nav-icon">
+            <button type="button" class="header__nav-icon">
               <span>Оставить заявку</span>
               <img src="./app/assets/img/ic/repair.svg" alt="repair" />
             </button>
-            <button class="header__nav-icon">
+            <button type="button" class="header__nav-icon">
               <span>Статус ремонта</span>
               <img
                 src="./app/assets/img/ic/checkstatus.svg"
@@ -94,7 +94,7 @@
                 </p>
               </div>
 
-              <button class="about-content__read-more-btn">
+              <button type="button" class="about-content__read-more-btn">
                 <img src="./app/assets/img/expand.svg" alt="" />
                 <img
                   class="about-content__collapsed-icon"
@@ -388,7 +388,7 @@
         </div>
 
         <!-- PRICES -->
-        <div class="prices brands brands--box-model">
+        <div class="prices prices--box-model brands brands--box-model">
           <div class="prices__title brands__title">
             <h2>Цены на услуги</h2>
           </div>
@@ -453,12 +453,34 @@
                 </div>
               </li>
             </template>
-
             <div class="brands-slider__pagination swiper-pagination"></div>
           </div>
           <div class="prices__fade brands__fade"></div>
         </div>
+
+        <div class="services-info services-info--box-model">
+          <p class="services-info__about-prices">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <button type="button" class="services-info__get-offer-btn">
+            Получить коммерческое <span>предложение</span>
+          </button>
+        </div>
       </main>
+
+      <footer class="footer-info footer-info--box-model brands brands__title">
+        <div class="footer-info__item-container footer-info__item">
+          <span>© 2019 CPS</span>
+          <span>Разработано командой Apesong</span>
+        </div>
+        <span class="footer-info__item">Политика конфиденциальности</span>
+        <span class="footer-info__item"
+          >Информация, размещенная на данной странице, не является публичной
+          офертой</span
+        >
+      </footer>
     </div>
 
     <!-- SIDEBAR -->
@@ -466,7 +488,7 @@
       <div class="sidebar sidebar--box-model">
         <!-- Top -->
         <div class="sidebar-top sidebar-top--box-model">
-          <button class="sidebar-top__icon">
+          <button type="button" class="sidebar-top__icon">
             <img
               src="./app/assets/img/ic/close-burger.svg"
               alt="close sidebar"
@@ -475,7 +497,7 @@
           <a href="#" class="sidebar-top__logo">
             <img src="./app/assets/img/logo/cps-logo.svg" alt="logo" />
           </a>
-          <button class="sidebar-top__icon">
+          <button type="button" class="sidebar-top__icon">
             <img src="./app/assets/img/ic/search.svg" alt="search" />
           </button>
         </div>
@@ -513,13 +535,13 @@
         <!-- Contacts -->
         <div class="contacts contacts--box-model">
           <div class="contacts__icons">
-            <button class="contacts__icon">
+            <button type="button" class="contacts__icon">
               <img src="./app/assets/img/ic/call.svg" alt="call" />
             </button>
-            <button class="contacts__icon">
+            <button type="button" class="contacts__icon">
               <img src="./app/assets/img/ic/chat.svg" alt="chat" />
             </button>
-            <button class="contacts__icon">
+            <button type="button" class="contacts__icon">
               <img src="./app/assets/img/ic/profile.svg" alt="profile" />
             </button>
           </div>
@@ -534,13 +556,15 @@
 
         <!-- lang -->
         <div class="sidebar__lang-list">
-          <button class="sidebar__lang sidebar__lang--active"> RU </button>
-          <button class="sidebar__lang">EN</button>
-          <button class="sidebar__lang">CH</button>
+          <button type="button" class="sidebar__lang sidebar__lang--active">
+            RU
+          </button>
+          <button type="button" class="sidebar__lang">EN</button>
+          <button type="button" class="sidebar__lang">CH</button>
         </div>
       </div>
-    </aside>
 
-    <footer></footer>
+      <div class="sidebar-backdrop sidebar-backdrop--box-model"></div>
+    </aside>
   </body>
 </html>

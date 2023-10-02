@@ -1,0 +1,54 @@
+.services-info {
+  &__about-prices {
+    max-width: 421px;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+    @include about-prices-font;
+  }
+
+  &__get-offer-btn {
+    align-items: center;
+
+    & > span {
+      position: relative;
+      &::after {
+        position: absolute;
+        right: -24px;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        content: "";
+        background-image: url(../../../assets/img/ic/more.svg);
+      }
+    }
+
+    @include get-offer-font;
+  }
+
+  &--box-model {
+    margin: 0 16px 40px 16px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  //
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) {
+  .services-info {
+    &--box-model {
+      margin: 0 0 48px 24px;
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1120px) {
+  .services-info {
+    &--box-model {
+      margin: 0 0 50px 32px;
+    }
+  }
+}

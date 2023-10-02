@@ -7,19 +7,18 @@
   flex-direction: column;
   flex-shrink: 0;
   background: #fff;
-  box-shadow:
-    16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  box-shadow: $sidebar-shadow;
 
   &__lang-list {
     margin-left: 24px;
     display: flex;
     gap: 8px;
-    cursor: pointer;
+    width: fit-content;
   }
 
   &__lang {
     margin-bottom: 32px;
+    cursor: pointer;
 
     color: #1b1c21;
     font-family: TT Lakes Medium;

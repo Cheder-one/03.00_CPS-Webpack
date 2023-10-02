@@ -1,5 +1,6 @@
-$back: rgb(41, 41, 9);
-$text: rgb(212, 166, 166);
+$sidebar-shadow:
+  16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+  -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
 @mixin slide-prices-font {
   color: #1b1c21;
@@ -31,4 +32,45 @@ $text: rgb(212, 166, 166);
   font-weight: 500;
   line-height: 114.286%;
   opacity: 0.7218;
+}
+
+@mixin about-prices-font {
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  letter-spacing: 0.2px;
+}
+
+@mixin get-offer-font {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+
+@mixin footer-info-font {
+  color: #7e7e82;
+  text-align: center;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114.286%;
+  opacity: 0.7218;
+}
+
+@mixin aqua-divider {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: #d9fff5;
 }
