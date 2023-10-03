@@ -33,12 +33,7 @@
 }
 
 /* ---- LAPTOP ---- */
-@media screen and (min-width: 1023.9px) {
-  //
-}
-
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1439.9px) {
+@media screen and (min-width: 1366px) {
   .sidebar-top {
     &__icon:nth-child(1) {
       display: none;
@@ -48,4 +43,17 @@
       margin: 30px 30px 38px 22px;
     }
   }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  // .sidebar-top {
+  //   &__icon:nth-child(1) {
+  //     display: none;
+  //   }
+
+  //   &--box-model {
+  //     margin: 30px 30px 38px 22px;
+  //   }
+  // }
 }

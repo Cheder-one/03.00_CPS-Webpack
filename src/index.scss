@@ -10,8 +10,19 @@
 @import "./app/components/main-container/main-container.scss";
 @import "./app/components/aside-container/aside-container.scss";
 
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1355.9px) {
+.body {
+  &--scroll {
+    &--unlock {
+      overflow: auto;
+    }
+    &--lock {
+      overflow: hidden;
+    }
+  }
+}
+
+/* ---- LAPTOP ---- */
+@media screen and (min-width: 1023.9px) {
   body {
     display: flex;
 

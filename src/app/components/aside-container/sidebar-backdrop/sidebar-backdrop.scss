@@ -9,10 +9,19 @@
     top: 0;
     z-index: 5;
   }
+
+  &--active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  &--hidden {
+    transform: translateX(-3600px);
+    transition: transform 0.3s ease;
+  }
 }
 
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1439.9px) {
+/* ---- LAPTOP ---- */
+@media screen and (min-width: 1023.9px) {
   .sidebar-backdrop {
     display: none;
   }

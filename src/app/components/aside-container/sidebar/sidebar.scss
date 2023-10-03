@@ -61,21 +61,34 @@
       width: 100vw;
       max-width: 360px;
     }
+
+    &--active {
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+    &--hidden {
+      transform: translateX(-360px);
+      transition: transform 0.3s ease;
+    }
   }
 }
 
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  //
+  .sidebar {
+    &--active {
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+    &--hidden {
+      transform: translateX(-360px);
+      transition: transform 0.3s ease;
+    }
+  }
 }
 
 /* ---- LAPTOP ---- */
 @media screen and (min-width: 1023.9px) {
-  //
-}
-
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1439.9px) {
   .sidebar {
     box-shadow: none;
     &--box-model {
@@ -83,4 +96,9 @@
       width: 320px;
     }
   }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  //
 }

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSP Макет</title>
   </head>
-  <body>
+  <body class="body body--scroll--unlock">
     <!-- MAIN CONTENT -->
     <div class="main-container">
       <header>
         <!-- TOP MENU -->
         <div class="top-menu top-menu--box-model">
-          <button type="button" class="top-menu__nav-icon">
+          <button type="button" class="top-menu__nav-icon top-menu__burger">
             <img src="./app/assets/img/ic/burger.svg" alt="sidebar" />
           </button>
           <div class="top-menu__divider"></div>
@@ -485,10 +485,13 @@
 
     <!-- SIDEBAR -->
     <aside class="aside-container">
-      <div class="sidebar sidebar--box-model">
+      <div class="sidebar sidebar--hidden sidebar--box-model">
         <!-- Top -->
         <div class="sidebar-top sidebar-top--box-model">
-          <button type="button" class="sidebar-top__icon">
+          <button
+            type="button"
+            class="sidebar-top__icon sidebar-top__close-burger"
+          >
             <img
               src="./app/assets/img/ic/close-burger.svg"
               alt="close sidebar"
@@ -564,7 +567,9 @@
         </div>
       </div>
 
-      <div class="sidebar-backdrop sidebar-backdrop--box-model"></div>
+      <div
+        class="sidebar-backdrop sidebar-backdrop--hidden sidebar-backdrop--box-model"
+      ></div>
     </aside>
   </body>
 </html>
