@@ -45,7 +45,7 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1439.9px) {
   .about-content {
     &__part-3 {
       display: none;
@@ -54,6 +54,6 @@
 }
 
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   //
 }

@@ -45,7 +45,7 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1439.9px) {
   .top-menu {
     &__logo {
       margin-right: auto;
@@ -63,7 +63,7 @@
 }
 
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   .top-menu {
     display: none;
   }

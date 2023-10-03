@@ -60,12 +60,12 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1439.9px) {
   //
 }
 
-/* ---- LAPTOP ---- */
-@media screen and (min-width: 1366px) {
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
   .menu-list {
     gap: 28px;
 
@@ -73,15 +73,4 @@
       margin: 0 0 32px 24px;
     }
   }
-}
-
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1439.9px) {
-  // .menu-list {
-  //   gap: 28px;
-
-  //   &--box-model {
-  //     margin: 0 0 32px 24px;
-  //   }
-  // }
 }

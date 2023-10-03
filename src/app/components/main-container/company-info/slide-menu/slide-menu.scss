@@ -7,8 +7,11 @@
     bottom: 0;
     flex-shrink: 0;
     position: absolute;
-    // prettier-ignore
-    background: linear-gradient(270deg,#f8f8f8 16.84%,rgba(248, 248, 248, 0) 100%);
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
   }
   &--box-model {
     position: relative;
@@ -23,7 +26,7 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1439.9px) {
   .slide-menu {
     &--box-model {
       margin-left: 24px;
@@ -33,7 +36,7 @@
 }
 
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   .slide-menu {
     &__fade {
       display: none;

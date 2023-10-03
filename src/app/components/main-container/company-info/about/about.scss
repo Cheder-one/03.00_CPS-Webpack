@@ -29,7 +29,7 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 768px) {
   .about {
     gap: 48px;
 
@@ -47,7 +47,7 @@
 }
 
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   .about {
     gap: 36px;
 
