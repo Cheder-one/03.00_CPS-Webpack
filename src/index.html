@@ -486,7 +486,6 @@
     <!-- SIDEBAR -->
     <aside class="aside-container">
       <div class="sidebar sidebar--hidden sidebar--box-model">
-        <!-- <div class="sidebar__side-menu sidebar__side-menu--!active" hidden> -->
         <!-- Top -->
         <div class="sidebar-top sidebar-top--box-model">
           <button type="button" class="sidebar-top__icon sidebar-top__close">
@@ -562,48 +561,60 @@
         </div>
       </div>
 
-      <div
-        class="sidebar-feedback sidebar-feedback--box-model sidebar-feedback--!hidden"
-      >
-        <button type="button" class="sidebar-feedback__close">
-          <img src="./app/assets/img/ic/close.svg" alt="close feedback" />
-        </button>
+      <div class="sidebar-right sidebar-right--box-model sidebar-right--hidden">
+        <div
+          class="sidebar-feedback sidebar-feedback--box-model sidebar-feedback--hidden"
+        >
+          <button type="button" class="sidebar-feedback__close">
+            <img src="./app/assets/img/ic/close.svg" alt="close feedback" />
+          </button>
 
-        <h2 class="sidebar-feedback__title">Обратная связь</h2>
-        <div class="sidebar-feedback__fields">
-          <input
-            type="text"
-            name="name"
-            placeholder="Имя"
-            class="sidebar-feedback__input"
-          />
-          <input
-            type="text"
-            name="tel"
-            placeholder="Телефон"
-            class="sidebar-feedback__input"
-          />
-          <input
-            type="text"
-            name="email"
-            placeholder="Электронная почта"
-            class="sidebar-feedback__input"
-          />
-          <textarea
-            rows="4"
-            cols="50"
-            name="message"
-            placeholder="Сообщение"
-            class="sidebar-feedback__input"
-          ></textarea>
-        </div>
+          <h2 class="sidebar-feedback__title">Обратная связь</h2>
+          <div class="sidebar-feedback__fields">
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              class="sidebar-feedback__input"
+            />
+            <input
+              type="text"
+              name="tel"
+              placeholder="Телефон"
+              class="sidebar-feedback__input"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Электронная почта"
+              class="sidebar-feedback__input"
+            />
+            <textarea
+              rows="4"
+              cols="50"
+              name="message"
+              placeholder="Сообщение"
+              class="sidebar-feedback__input"
+            ></textarea>
+          </div>
 
-        <div class="sidebar-feedback__data-agreement">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
-          <a href="#">политикой конфиденциальности</a>
+          <div class="sidebar-feedback__data-agreement">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
+            <a href="#">политикой конфиденциальности</a>
+          </div>
+
+          <div class="sidebar-feedback__send prices-slider">
+            <a class="prices-slider__slide-order" href="#">
+              <span class="prices-slider__order-item">Отправить</span>
+              <img
+                class="prices-slider__order-item"
+                src="./app/assets/img/ic/goside.svg"
+                alt="go side"
+              />
+            </a>
+          </div>
         </div>
-        <!-- </div> -->
       </div>
 
       <div

@@ -1,6 +1,9 @@
 .sidebar-feedback {
+  position: fixed;
+
   display: flex;
   flex-direction: column;
+  background: #fff;
 
   &__close {
     margin-top: 24px;
@@ -49,31 +52,51 @@
   }
 
   &__data-agreement {
+    margin-bottom: 20px;
     @include data-agreement-font;
+
     & > a {
       @include data-agreement-highlighting-font;
     }
   }
 
+  &__send {
+    align-self: flex-end;
+  }
+
   &--box-model {
+    height: 100vh;
+    width: 320px;
+
     padding: 0 16px;
   }
 
-  &--active {
-    display: flex;
-  }
-  &--hidden {
-    display: none;
-  }
+  // &--active {
+  //   display: flex;
+  // }
+  // &--hidden {
+  //   display: none;
+  // }
 }
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1439.9px) {
   .sidebar-feedback {
+    position: relative;
+
     &__close {
-      display: none;
+      position: absolute;
+      top: 10px;
+      left: -72px;
     }
+
+    &__input {
+      width: 376px;
+    }
+
     &--box-model {
+      height: 100vh;
+      width: 440px;
       padding: 0 32px;
     }
   }
