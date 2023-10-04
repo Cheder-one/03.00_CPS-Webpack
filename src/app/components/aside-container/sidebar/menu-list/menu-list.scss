@@ -32,13 +32,7 @@
       letter-spacing: -0.2px;
 
       &::before {
-        position: absolute;
-        left: 0;
-        content: "";
-        width: 4px;
-        height: 32px;
-        flex-shrink: 0;
-        background-image: url("../../../../assets/img/highlight.svg");
+        @include aqua-highlight;
       }
     }
   }

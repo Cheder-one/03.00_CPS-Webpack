@@ -470,7 +470,7 @@
         </div>
       </main>
 
-      <footer class="footer-info footer-info--box-model brands brands__title">
+      <footer class="footer-info footer-info--box-model brands">
         <div class="footer-info__item-container footer-info__item">
           <span>© 2019 CPS</span>
           <span>Разработано командой Apesong</span>
@@ -486,16 +486,11 @@
     <!-- SIDEBAR -->
     <aside class="aside-container">
       <div class="sidebar sidebar--hidden sidebar--box-model">
+        <!-- <div class="sidebar__side-menu sidebar__side-menu--!active" hidden> -->
         <!-- Top -->
         <div class="sidebar-top sidebar-top--box-model">
-          <button
-            type="button"
-            class="sidebar-top__icon sidebar-top__close-burger"
-          >
-            <img
-              src="./app/assets/img/ic/close-burger.svg"
-              alt="close sidebar"
-            />
+          <button type="button" class="sidebar-top__icon sidebar-top__close">
+            <img src="./app/assets/img/ic/close.svg" alt="close sidebar" />
           </button>
           <a href="#" class="sidebar-top__logo">
             <img src="./app/assets/img/logo/cps-logo.svg" alt="logo" />
@@ -565,6 +560,50 @@
           <button type="button" class="sidebar__lang">EN</button>
           <button type="button" class="sidebar__lang">CH</button>
         </div>
+      </div>
+
+      <div
+        class="sidebar-feedback sidebar-feedback--box-model sidebar-feedback--!hidden"
+      >
+        <button type="button" class="sidebar-feedback__close">
+          <img src="./app/assets/img/ic/close.svg" alt="close feedback" />
+        </button>
+
+        <h2 class="sidebar-feedback__title">Обратная связь</h2>
+        <div class="sidebar-feedback__fields">
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя"
+            class="sidebar-feedback__input"
+          />
+          <input
+            type="text"
+            name="tel"
+            placeholder="Телефон"
+            class="sidebar-feedback__input"
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Электронная почта"
+            class="sidebar-feedback__input"
+          />
+          <textarea
+            rows="4"
+            cols="50"
+            name="message"
+            placeholder="Сообщение"
+            class="sidebar-feedback__input"
+          ></textarea>
+        </div>
+
+        <div class="sidebar-feedback__data-agreement">
+          Нажимая “отправить”, вы даете согласие на
+          <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
+          <a href="#">политикой конфиденциальности</a>
+        </div>
+        <!-- </div> -->
       </div>
 
       <div

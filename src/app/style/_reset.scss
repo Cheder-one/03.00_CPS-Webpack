@@ -27,6 +27,13 @@ a {
   all: unset;
   cursor: pointer;
 }
+input,
+textarea {
+  all: unset;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+
 ul,
 ol,
 li {

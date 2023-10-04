@@ -4,9 +4,7 @@ import "./index.scss";
 import "./app/components/main-container/main-container.js";
 import "./app/components/aside-container/aside-container.js";
 
-// TODO Перенести отступы в переменные
-
+// TODO Реализовать "Обратная связь"
+// TODO Реализовать "Заказать звонок"
 // TODO Реализовать "Читать далее"
-
-// TODO Реализовать затуманивание бэкграунда
-// TODO Реализовать hover для интерактивных элементов
+// TODO Реализовать "menu-list__item--active"

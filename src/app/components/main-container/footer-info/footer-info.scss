@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   text-transform: initial;
+  @extend .brands__title;
   @include footer-info-font;
 
   &__item-container {
