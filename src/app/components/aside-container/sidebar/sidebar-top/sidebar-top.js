@@ -1,8 +1,13 @@
-import { toggleSidebarNScrollState } from "../../../../utils/sidebar";
+import {
+  hideBackdrop,
+  hideLeftSidebar,
+  toggleBodyScroll
+} from "../../../../utils/sidebar";
 
 const closeSidebar = document.querySelector(".sidebar-top__close");
 
 closeSidebar.onclick = () => {
-  console.log(closeSidebar);
-  toggleSidebarNScrollState();
+  toggleBodyScroll();
+  hideBackdrop();
+  hideLeftSidebar();
 };

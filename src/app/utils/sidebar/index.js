@@ -1,3 +1,21 @@
-import { toggleSidebarNScrollState } from "./toggleSidebarNScrollState";
+import {
+  showRightSidebar,
+  showBackdrop,
+  hideAllSidebars,
+  hideBackdrop,
+  toggleBodyScroll,
+  showLeftSidebar,
+  hideLeftSidebar,
+  hideRightSidebar
+} from "./toggleElements";
 
-export { toggleSidebarNScrollState };
+export {
+  showRightSidebar,
+  showBackdrop,
+  hideAllSidebars,
+  hideBackdrop,
+  toggleBodyScroll,
+  showLeftSidebar,
+  hideLeftSidebar,
+  hideRightSidebar
+};

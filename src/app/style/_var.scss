@@ -83,7 +83,6 @@ $sidebar-shadow:
   font-weight: 500;
   line-height: 114.286%;
 }
-
 @mixin data-agreement-highlighting-font {
   color: #ff3e79;
   font-family: TT Lakes Medium;
@@ -91,6 +90,25 @@ $sidebar-shadow:
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+}
+
+@mixin sidebar-lang {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+@mixin sidebar-lang-selected {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
 }
 
 @mixin aqua-divider {

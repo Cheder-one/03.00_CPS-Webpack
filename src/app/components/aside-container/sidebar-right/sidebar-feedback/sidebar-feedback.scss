@@ -1,11 +1,11 @@
 .sidebar-feedback {
-  position: fixed;
-
   display: flex;
   flex-direction: column;
   background: #fff;
+  overflow: auto;
 
   &__close {
+    width: fit-content;
     margin-top: 24px;
   }
 
@@ -20,6 +20,7 @@
     &::before {
       @include aqua-highlight;
       height: 40px;
+      margin-right: 16px;
     }
   }
 
@@ -62,6 +63,34 @@
 
   &__send {
     align-self: flex-end;
+
+    & > a {
+      position: static;
+    }
+  }
+
+  &--feedback {
+    .sidebar-feedback__title {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  &--call {
+    .sidebar-feedback__title {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    .sidebar-feedback__fields {
+      & > * {
+        display: none;
+      }
+      .sidebar-feedback__tel {
+        display: flex;
+      }
+    }
   }
 
   &--box-model {
@@ -70,20 +99,24 @@
 
     padding: 0 16px;
   }
+}
 
-  // &--active {
-  //   display: flex;
-  // }
-  // &--hidden {
-  //   display: none;
-  // }
+/* ---- MOBILE ---- */
+@media screen and (max-width: 1024px) {
+  .sidebar-feedback {
+    &__title {
+      margin-left: -16px;
+
+      &::before {
+        position: static;
+      }
+    }
+  }
 }
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1439.9px) {
   .sidebar-feedback {
-    position: relative;
-
     &__close {
       position: absolute;
       top: 10px;
@@ -95,6 +128,8 @@
     }
 
     &--box-model {
+      min-height: 676px;
+
       height: 100vh;
       width: 440px;
       padding: 0 32px;

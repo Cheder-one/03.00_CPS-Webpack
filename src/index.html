@@ -532,10 +532,10 @@
         <!-- Contacts -->
         <div class="contacts contacts--box-model">
           <div class="contacts__icons">
-            <button type="button" class="contacts__icon">
+            <button type="button" class="contacts__icon contacts__icon-call">
               <img src="./app/assets/img/ic/call.svg" alt="call" />
             </button>
-            <button type="button" class="contacts__icon">
+            <button type="button" class="contacts__icon contacts__icon-chat">
               <img src="./app/assets/img/ic/chat.svg" alt="chat" />
             </button>
             <button type="button" class="contacts__icon">
@@ -563,13 +563,15 @@
 
       <div class="sidebar-right sidebar-right--box-model sidebar-right--hidden">
         <div
-          class="sidebar-feedback sidebar-feedback--box-model sidebar-feedback--hidden"
+          class="sidebar-feedback sidebar-feedback--box-model sidebar-feedback--feedback"
         >
           <button type="button" class="sidebar-feedback__close">
             <img src="./app/assets/img/ic/close.svg" alt="close feedback" />
           </button>
 
           <h2 class="sidebar-feedback__title">Обратная связь</h2>
+          <h2 class="sidebar-feedback__title">Заказать звонок</h2>
+
           <div class="sidebar-feedback__fields">
             <input
               type="text"
@@ -581,7 +583,7 @@
               type="text"
               name="tel"
               placeholder="Телефон"
-              class="sidebar-feedback__input"
+              class="sidebar-feedback__input sidebar-feedback__tel"
             />
             <input
               type="text"

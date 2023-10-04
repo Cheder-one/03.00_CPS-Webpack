@@ -1,12 +1,32 @@
 .sidebar-right {
   position: fixed;
   right: 0;
+  top: 0;
   z-index: 10;
+  overflow: auto;
 
   flex-shrink: 0;
+  border-left: 2px solid #d9fff5;
+
+  &--active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  &--hidden {
+    transform: translateX(520px);
+    transition: transform 0.3s ease;
+  }
 
   &--box-model {
+    min-height: 676px;
     width: 320px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .sidebar-right {
+    border-left: none;
   }
 }
 

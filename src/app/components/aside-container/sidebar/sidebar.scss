@@ -2,41 +2,12 @@
 @import "./menu-list/menu-list.scss";
 @import "./contacts/contacts.scss";
 
-@mixin sidebar-lang {
-  color: #1b1c21;
-  font-family: TT Lakes Medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.2px;
-}
-@mixin sidebar-lang-selected {
-  color: #7e7e82;
-  font-family: TT Lakes;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.2px;
-}
-
 .sidebar {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   background: #fff;
   box-shadow: $sidebar-shadow;
-
-  // &__side-menu {
-  //   &--hidden {
-  //     display: none;
-  //   }
-  //   &--active {
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  // }
 
   &__lang-list {
     margin-left: 24px;
@@ -107,6 +78,7 @@
 @media screen and (min-width: 1439.9px) {
   .sidebar {
     box-shadow: none;
+    z-index: 0;
     &--box-model {
       position: relative;
       width: 320px;

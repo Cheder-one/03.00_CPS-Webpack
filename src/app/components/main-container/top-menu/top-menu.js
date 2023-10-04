@@ -1,8 +1,13 @@
-import { toggleSidebarNScrollState } from "../../../utils/sidebar";
+import {
+  showBackdrop,
+  showLeftSidebar,
+  toggleBodyScroll
+} from "../../../utils/sidebar";
 
 const burger = document.querySelector(".top-menu__burger");
 
 burger.onclick = () => {
-  console.log(burger);
-  toggleSidebarNScrollState();
+  toggleBodyScroll();
+  showBackdrop();
+  showLeftSidebar();
 };
