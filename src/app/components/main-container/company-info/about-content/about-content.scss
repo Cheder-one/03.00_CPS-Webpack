@@ -29,6 +29,26 @@
   &__collapsed-icon {
     display: none;
   }
+
+  &__hidden {
+    margin-top: 18px;
+  }
+
+  &--collapsed {
+    .about-content__hidden {
+      display: none;
+    }
+  }
+  &--expanded {
+    .about-content__hidden {
+      display: block;
+    }
+    // .brands-slider {
+    //   &__wrapper {
+    //     margin-bottom: 46px;
+    //   }
+    // }
+  }
 }
 
 /* ---- MOBILE ---- */

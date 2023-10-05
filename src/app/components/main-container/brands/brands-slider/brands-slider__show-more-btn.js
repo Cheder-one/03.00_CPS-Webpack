@@ -5,35 +5,35 @@ import {
   toggleMoreBtnState
 } from "../../../../utils/slider";
 
-function toggleSlidesCollapse(sliderContainerClass) {
+function toggleSlidesCollapse(containerClass, btnFullClass) {
   const slidesCollapse = document.querySelector(
-    `.${sliderContainerClass}--collapsed`
+    `.${containerClass}--collapsed`
   );
 
-  const showMoreBtn = slidesCollapse.querySelector(".brands-slider__more-btn");
+  const showMoreBtn = slidesCollapse.querySelector(btnFullClass);
   const showMoreText = showMoreBtn.querySelector("span");
   const showMoreIcon = showMoreBtn.querySelector("img");
 
-  const checkIsBtnExpanded = () => {
-    return showMoreBtn.classList.contains("brands-slider__more-btn--collapsed");
+  const checkIsBtnCollapsed = () => {
+    return showMoreBtn.classList.contains(`${btnFullClass}--collapsed`);
   };
 
   showMoreBtn.addEventListener("click", () => {
-    const isExpanded = checkIsBtnExpanded();
+    const isCollapsed = checkIsBtnCollapsed();
 
-    toggleMoreBtnState(showMoreBtn);
-    toggleContainerState(slidesCollapse, sliderContainerClass);
+    toggleMoreBtnState(showMoreBtn, btnFullClass);
+    toggleContainerState(slidesCollapse, containerClass);
 
-    if (isExpanded) {
-      showMoreText.textContent = "Скрыть";
-      showMoreIcon.src = collapseImg;
-    } else {
+    if (isCollapsed) {
       showMoreText.textContent = "Показать все";
       showMoreIcon.src = expandImg;
+    } else {
+      showMoreText.textContent = "Скрыть";
+      showMoreIcon.src = collapseImg;
     }
   });
 }
 
-toggleSlidesCollapse("brands-slider");
+toggleSlidesCollapse("brands-slider", ".brands-slider__more-btn");
 
 export { toggleSlidesCollapse };

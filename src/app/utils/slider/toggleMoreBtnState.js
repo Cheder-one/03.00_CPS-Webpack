@@ -1,4 +1,4 @@
-export const toggleMoreBtnState = (showMoreBtn) => {
-  showMoreBtn.classList.toggle("brands-slider__more-btn--collapsed");
-  showMoreBtn.classList.toggle("brands-slider__more-btn--expanded");
+export const toggleMoreBtnState = (showMoreBtn, btnClass) => {
+  showMoreBtn.classList.toggle(`${btnClass}--collapsed`);
+  showMoreBtn.classList.toggle(`${btnClass}--expanded`);
 };

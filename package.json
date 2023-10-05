@@ -9,7 +9,8 @@
     "prod": "webpack --node-env=production",
     "clear": "rd /s /q dist",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

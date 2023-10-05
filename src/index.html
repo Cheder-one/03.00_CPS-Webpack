@@ -75,7 +75,9 @@
 
           <!-- About -->
           <div class="about about--box-model">
-            <section class="about-content about-content--box-model">
+            <section
+              class="about-content about-content--box-model about-content--collapsed"
+            >
               <div class="about-content__text">
                 <p class="about-content__part-1">
                   Мы являемся авторизованным сервисным центром по ремонту
@@ -92,13 +94,18 @@
                     свою очередь, советуют нас родным и близким.
                   </span>
                 </p>
+                <p class="about-content__hidden">
+                  Если у вас возникли проблемы с вашим ноутбуком Dell, не
+                  стесняйтесь обратиться к нам. Мы готовы помочь вам
+                  восстановить работоспособность вашей техники и обеспечить ее
+                  долгий срок службы.
+                </p>
               </div>
 
               <button type="button" class="about-content__read-more-btn">
-                <img src="./app/assets/img/expand.svg" alt="" />
                 <img
-                  class="about-content__collapsed-icon"
-                  src="./app/assets/img/collapse.svg"
+                  class="brands-slider__more-icon"
+                  src="./app/assets/img/expand.svg"
                   alt=""
                 />
                 <span class="about-content__read-more">Читать далее</span>
@@ -247,6 +254,7 @@
             </template>
 
             <button
+              type="button"
               class="brands-slider__more-btn brands-slider__more-btn--collapsed"
             >
               <img
