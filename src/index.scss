@@ -10,10 +10,6 @@
 @import "./app/components/main-container/main-container.scss";
 @import "./app/components/aside-container/aside-container.scss";
 
-footer {
-  overflow-x: hidden;
-}
-
 .body {
   &--scroll {
     &--unlock {
@@ -23,6 +19,9 @@ footer {
       overflow: hidden;
     }
   }
+}
+footer {
+  overflow-x: hidden;
 }
 
 /* ---- DESKTOP ---- */
