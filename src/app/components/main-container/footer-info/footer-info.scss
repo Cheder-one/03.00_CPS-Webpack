@@ -45,7 +45,7 @@
     }
 
     &--box-model {
-      margin: 32px 24px 0 24px;
+      padding: 32px 24px 0 24px;
     }
   }
 }
@@ -54,7 +54,7 @@
 @media screen and (min-width: 1439.9px) {
   .footer-info {
     &--box-model {
-      margin: 32px;
+      padding: 32px;
       padding-bottom: 0;
       margin-bottom: 20px;
     }
