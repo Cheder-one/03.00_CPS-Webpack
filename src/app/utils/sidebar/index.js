@@ -6,8 +6,10 @@ import {
   toggleBodyScroll,
   showLeftSidebar,
   hideLeftSidebar,
-  hideRightSidebar
-} from "./toggleElements";
+  hideRightSidebar,
+  switchSidebarToFeedback,
+  switchSidebarToCall
+} from "./toggleSidebarElements";
 
 export {
   showRightSidebar,
@@ -17,5 +19,7 @@ export {
   toggleBodyScroll,
   showLeftSidebar,
   hideLeftSidebar,
-  hideRightSidebar
+  hideRightSidebar,
+  switchSidebarToFeedback,
+  switchSidebarToCall
 };

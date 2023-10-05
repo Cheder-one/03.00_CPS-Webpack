@@ -12,11 +12,11 @@
 
   &--active {
     transform: translateX(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
   }
   &--hidden {
     transform: translateX(-3600px);
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
   }
 }
 

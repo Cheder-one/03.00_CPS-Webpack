@@ -2,6 +2,7 @@ const body = document.querySelector(".body");
 const backdrop = document.querySelector(".sidebar-backdrop");
 const sidebarLeft = document.querySelector(".sidebar");
 const sidebarRight = document.querySelector(".sidebar-right");
+const sidebarFeedback = document.querySelector(".sidebar-feedback");
 
 export const toggleBodyScroll = () => {
   body.classList.toggle("body--scroll--unlock");
@@ -46,5 +47,18 @@ export const hideAllSidebars = () => {
   sidebarRight.classList.replace(
     "sidebar-right--active",
     "sidebar-right--hidden"
+  );
+};
+
+export const switchSidebarToFeedback = () => {
+  sidebarFeedback.classList.replace(
+    "sidebar-feedback--call",
+    "sidebar-feedback--feedback"
+  );
+};
+export const switchSidebarToCall = () => {
+  sidebarFeedback.classList.replace(
+    "sidebar-feedback--feedback",
+    "sidebar-feedback--call"
   );
 };

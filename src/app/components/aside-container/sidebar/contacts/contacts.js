@@ -1,22 +1,26 @@
-const sidebarFeedback = document.querySelector(".sidebar-feedback");
+import {
+  hideLeftSidebar,
+  showBackdrop,
+  showRightSidebar,
+  switchSidebarToCall,
+  switchSidebarToFeedback
+} from "../../../../utils/sidebar";
+
 const call = document.querySelector(".contacts__icon-call");
 const feedback = document.querySelector(".contacts__icon-chat");
-const close = document.querySelector(".sidebar-feedback__close");
 
 feedback.onclick = () => {
+  switchSidebarToFeedback();
   showRightSidebar();
   showBackdrop();
-  sidebarFeedback.classList.replace(
-    "sidebar-feedback--call",
-    "sidebar-feedback--feedback"
-  );
+
+  hideLeftSidebar();
 };
 
 call.onclick = () => {
+  switchSidebarToCall();
   showRightSidebar();
   showBackdrop();
-  sidebarFeedback.classList.replace(
-    "sidebar-feedback--feedback",
-    "sidebar-feedback--call"
-  );
+
+  hideLeftSidebar();
 };
